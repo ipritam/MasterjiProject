@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="/public/Screenshot 2025-03-25 181900.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1 class="head">Book Library</h1>
+        <div id="search">
+            <input type="text" id="searchInput" placeholder="Search by title or author">
+            <button id="toggleViewBtn">Toggle View</button>
+            <select id="sortOptions">
+                <option value="title">Title (A-Z)</option>
+                <option value="date">Published Date (Oldest First)</option>
+                <option value="">Sort By</option>
+            </select>
+        </div>
+    </header>
+
+    <main>
+        <div id="bookContainer" class="grid-view">
+        </div>
+
+        <div id="pagination-controls">
+            <button id="prevPage" disabled>Previous</button>
+            <span id="page-info">Page: 1</span>
+            <button id="nextPage">Next</button>
+        </div>
+    </main>
+
+    <script src="script.js" type="module"></script>
+</body>
+
+</html>
